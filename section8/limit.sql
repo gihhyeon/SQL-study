@@ -16,3 +16,6 @@ SELECT title, author_fname, author_lname, pages FROM books WHERE title LIKE '%:%
 SELECT * FROM books WHERE author_fname LIKE '___'; -- _ 하나가 문자 하나
 
 SELECT * FROM books WHERE author_fname LIKE '_a_';
+
+-- To select books with '%' in their title:
+SELECT * FROM books WHERE title LIKE '%\%%';
